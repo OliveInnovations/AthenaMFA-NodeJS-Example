@@ -1,10 +1,10 @@
 {
   "name": "athena-mfa.demo.node-js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "AthenaMFA.Demo.NodeJS",
   "main": "server.js",
   "author": {
-    "name": ""
+    "name": "Olive Innovations"
   },
   "dependencies": {
     "athenamfa-api-integration": "^1.0.0",
