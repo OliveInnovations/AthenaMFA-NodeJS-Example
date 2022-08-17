@@ -8,7 +8,7 @@ const jsonParser = bodyParser.json();
 const cookieParser = require('cookie-parser');
 const csrf = require('csurf');
 const csrfProtect = csrf({ cookie: true });
-const athena = require('athenamfa');
+const athena = require('athenamfa-api-integration');
 
 const athenaKey = ""; //This is your api key for you application, you can get this from https://portal.athenamfa.com if you have not registered you can create a free account
 const athenaReferer = ""; //This is a domain added to your application in the athenamfa portal, it must include the protocol for example https://example.com

@@ -7,7 +7,7 @@
     "name": ""
   },
   "dependencies": {
-    "athenamfa": "^1.0.0",
+    "athenamfa-api-integration": "^1.0.0",
     "body-parser": "^1.20.0",
     "cookie-parser": "^1.4.6",
     "csurf": "^1.11.0",
