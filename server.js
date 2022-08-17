@@ -31,6 +31,10 @@ app.get('/', csrfProtect, function (req, res) {
                             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
                             integrity="sha256-7ZWbZUAi97rkirk4DcEp4GWDPkWpRMcNaEyXGsNXjLg=" 
                             crossorigin="anonymous" />
+
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/athenamfa@1.0.2/athenamfa.css" 
+                            integrity="sha256-dEduQJaNzblTw8yKaGDv7sNK6q8LaW91hEbUfwLS2W4=" 
+                            crossorigin="anonymous" />
             </head>
             <body>
                 <div class="container">
@@ -62,7 +66,11 @@ app.get('/', csrfProtect, function (req, res) {
 
                 <script src="/static/js/demoform.js"></script>
 
-                <script type="text/javascript" src="https://portal.athenamfa.com/js/AthenaMFA.js?v0.2"></script>
+                <script src="https://cdn.jsdelivr.net/npm/athenamfa@1.0.2/athenamfa.js"
+                        integrity="sha256-pu/DPhTLNL7oo4OitoaPAl6qDPQfK5GvIslTxqTuIPM="
+                        crossorigin="anonymous">
+                </script>
+
                 <script type="text/javascript">
                     $(function () {
                         AthenaMfa.Init({
