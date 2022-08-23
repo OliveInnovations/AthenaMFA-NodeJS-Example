@@ -1,6 +1,10 @@
 // Variable to hold request
 var request;
 
+function success() {
+    alert("Your authentication request has been approved!");
+
+}
 // Bind to the submit event of our form
 $("#demoform").submit(function (event) {
 

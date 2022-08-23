@@ -32,9 +32,7 @@ app.get('/', csrfProtect, function (req, res) {
                             integrity="sha256-7ZWbZUAi97rkirk4DcEp4GWDPkWpRMcNaEyXGsNXjLg=" 
                             crossorigin="anonymous" />
 
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/athenamfa@1.0.2/athenamfa.css" 
-                            integrity="sha256-dEduQJaNzblTw8yKaGDv7sNK6q8LaW91hEbUfwLS2W4=" 
-                            crossorigin="anonymous" />
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/athenamfa@1.0.5/athenamfa.css" integrity="sha256-e4ZJ039BBoUtilitxs4SkOX1M63jcXiu0jJBb+64PGk=" crossorigin="anonymous">
             </head>
             <body>
                 <div class="container">
@@ -66,17 +64,14 @@ app.get('/', csrfProtect, function (req, res) {
 
                 <script src="/static/js/demoform.js"></script>
 
-                <script src="https://cdn.jsdelivr.net/npm/athenamfa@1.0.2/athenamfa.js"
-                        integrity="sha256-pu/DPhTLNL7oo4OitoaPAl6qDPQfK5GvIslTxqTuIPM="
-                        crossorigin="anonymous">
-                </script>
+                <script src="https://cdn.jsdelivr.net/npm/athenamfa@1.0.5/athenamfa.js" integrity="sha256-uH96oWDBkZ7s64oL3+9z2czaDWxGUAJ5D3j4/H4Az/U=" crossorigin="anonymous"></script>
 
                 <script type="text/javascript">
                     $(function () {
                         AthenaMfa.Init({
                             checkCallbackUrl: '/mfa/checkmfa',
                             validateResponseCodeUrl: '/mfa/validateresponsecode',
-                            successRedirectUrl: '/authenticated',
+                            onSuccess: success,
                             csrfToken: '${req.csrfToken()}',
                             timeout: 1000
                         });
